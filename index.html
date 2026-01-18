@@ -1,0 +1,93 @@
+<!--Dashboard (home)-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-left">
+            <div class="brand">
+                <img src="assts/logo/logo.png" alt="Gastos+ logo" class="brand-log">
+                <span class="brand-name">Gastos+</span>
+            </div>            
+        </div>
+    <div class="topbar-center">
+        <select id="monthSelect" class="month-select"></select>
+
+        <input 
+            type="search"
+            id="searchInput"
+            class="search-input"
+            placeholder="Buscar gastos, categorias..."
+        >
+    </div>
+    <div class="topbar-right">
+        <button id="openExpenseModal" class="btn-primary">
+            + Novo Gasto
+        </button>
+    <div>
+        <img
+        src="assets/avatars/default-user.png"
+        alt="Usuário"
+        class="user-avatar"
+        id="avatarButton"
+    >
+    <div class="avatar-menu" hidden>
+        <!-- grid de avatars -->
+    </div>
+    </div>
+    </div>
+    </header>
+    <main>
+        <!-- Wrapper de layout (GRID 2 COLUNAS) -->
+  <div class="dashboard-wrapper">
+
+    <!-- Coluna esquerda (conteúdo principal) -->
+    <div class="dashboard-main">
+
+      <!-- Section = conteúdo com significado -->
+      <section class="summary-cards">
+        <h2>Resumo do mês</h2>
+        <!-- cards -->
+      </section>
+
+      <section class="daily-chart">
+        <h2>Gastos por dia</h2>
+        <!-- gráfico -->
+      </section>
+
+      <section class="transactions">
+        <h2>Últimas transações</h2>
+        <!-- tabela -->
+      </section>
+
+    </div>
+
+    <!-- Coluna direita (sidebar) -->
+    <div class="dashboard-sidebar">
+
+      <section class="categories">
+        <h2>Categorias</h2>
+        <!-- donut -->
+      </section>
+
+      <section class="month-goal">
+        <h2>Meta do mês</h2>
+        <!-- progresso -->
+      </section>
+
+      <section class="alerts">
+        <h2>Alertas</h2>
+        <!-- lista -->
+      </section>
+
+    </div>
+
+  </div>
+    </main>
+</body>
+</html>
